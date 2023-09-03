@@ -1,0 +1,382 @@
+        -:    0:Source:/home/sonik/CLionProjects/game_of_life/Life.cpp
+        -:    0:Graph:/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/CMakeFiles/example_tests.dir/Life.cpp.gcno
+        -:    0:Data:/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/CMakeFiles/example_tests.dir/Life.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "Life.h"
+        -:    2:
+function _ZN4LifeC2Emm called 1 returned 100% blocks executed 27%
+        1:    3:Life::Life(size_t width, size_t height) : width_(width), height_(height) {
+        1:    3-block  0
+call    0 returned 1
+        1:    4:    if (width_ < 3 || height_ < 3) {
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:    4-block  0
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    #####:    5:        throw LifeException("kto-to lozhanulsya");
+    %%%%%:    5-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:    5-block  1
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:    5-block  2
+call    8 never executed
+call    9 never executed
+call   10 never executed
+    $$$$$:    5-block  3
+call   11 never executed
+    $$$$$:    5-block  4
+    $$$$$:    5-block  5
+call   12 never executed
+    $$$$$:    5-block  6
+    $$$$$:    5-block  7
+call   13 never executed
+        -:    6:    }
+        1:    7:    cell_states_.resize(width * height);
+        1:    7-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:    8:}
+        1:    8-block  0
+    $$$$$:    8-block  1
+call    0 never executed
+        -:    9:
+function _ZNK4Life8getWidthEv called 0 returned 0% blocks executed 0%
+    #####:   10:size_t Life::getWidth() const {
+    #####:   11:    return width_;
+    %%%%%:   11-block  0
+        -:   12:}
+        -:   13:
+function _ZNK4Life9getHeightEv called 0 returned 0% blocks executed 0%
+    #####:   14:size_t Life::getHeight() const {
+    #####:   15:    return height_;
+    %%%%%:   15-block  0
+        -:   16:}
+        -:   17:
+function _ZNK4Life13getCellStatesEv called 0 returned 0% blocks executed 0%
+    #####:   18:const std::vector<bool> &Life::getCellStates() const {
+    #####:   19:    return cell_states_;
+    %%%%%:   19-block  0
+        -:   20:}
+        -:   21:
+function _ZN4Life12setCellStateEmmb called 3 returned 100% blocks executed 17%
+        3:   22:void Life::setCellState(size_t x, size_t y, bool state) {
+        3:   23:    if (!isValidCell(x, y)) {
+        3:   23-block  0
+call    0 returned 3
+branch  1 taken 0 (fallthrough)
+branch  2 taken 3
+    #####:   24:        throw LifeException("kto-to lozhanulsya: x = " +
+    %%%%%:   24-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   24-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    $$$$$:   24-block  2
+call    6 never executed
+    $$$$$:   24-block  3
+    #####:   25:                            std::to_string(x) + " y = " + std::to_string(y));
+    %%%%%:   25-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   25-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   25-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   25-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   25-block  4
+call   13 never executed
+call   14 never executed
+call   15 never executed
+call   16 never executed
+call   17 never executed
+call   18 never executed
+    $$$$$:   25-block  5
+call   19 never executed
+    $$$$$:   25-block  6
+    $$$$$:   25-block  7
+call   20 never executed
+    $$$$$:   25-block  8
+    $$$$$:   25-block  9
+call   21 never executed
+    $$$$$:   25-block 10
+    $$$$$:   25-block 11
+call   22 never executed
+    $$$$$:   25-block 12
+    $$$$$:   25-block 13
+call   23 never executed
+        -:   26:    }
+        3:   27:    cell_states_[y * width_ + x] = state;
+        3:   27-block  0
+call    0 returned 3
+call    1 returned 3
+        3:   28:}
+        -:   29:
+function _ZN4Life11setCellDedaEmm called 0 returned 0% blocks executed 0%
+    #####:   30:void Life::setCellDeda(size_t x, size_t y) {
+    #####:   31:    setCellState(x, y, false);
+    %%%%%:   31-block  0
+call    0 never executed
+    #####:   32:}
+        -:   33:
+function _ZN4Life12setCellAliveEmm called 3 returned 100% blocks executed 100%
+        3:   34:void Life::setCellAlive(size_t x, size_t y) {
+        3:   35:    setCellState(x, y, true);
+        3:   35-block  0
+call    0 returned 3
+        3:   36:}
+        -:   37:
+function _ZN4Life12getCellStateEmm called 0 returned 0% blocks executed 0%
+    #####:   38:bool Life::getCellState(size_t x, size_t y) {
+    #####:   39:    if (!isValidCell(x, y)) {
+    %%%%%:   39-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   40:        throw LifeException("kto-to lozhanulsya: x = " +
+    %%%%%:   40-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   40-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    $$$$$:   40-block  2
+call    6 never executed
+    $$$$$:   40-block  3
+    #####:   41:                            std::to_string(x) + " y = " + std::to_string(y));
+    %%%%%:   41-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   41-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   41-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   41-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   41-block  4
+call   13 never executed
+call   14 never executed
+call   15 never executed
+call   16 never executed
+call   17 never executed
+call   18 never executed
+    $$$$$:   41-block  5
+call   19 never executed
+    $$$$$:   41-block  6
+    $$$$$:   41-block  7
+call   20 never executed
+    $$$$$:   41-block  8
+    $$$$$:   41-block  9
+call   21 never executed
+    $$$$$:   41-block 10
+    $$$$$:   41-block 11
+call   22 never executed
+    $$$$$:   41-block 12
+    $$$$$:   41-block 13
+call   23 never executed
+        -:   42:    }
+    #####:   43:    rightCoordinates(x, y);
+    %%%%%:   43-block  0
+call    0 never executed
+    #####:   44:    return cell_states_[y * width_ + x];
+call    0 never executed
+call    1 never executed
+    %%%%%:   44-block  0
+        -:   45:}
+        -:   46:
+function _ZN4Life16rightCoordinatesEmm called 0 returned 0% blocks executed 0%
+    #####:   47:void Life::rightCoordinates(size_t x, size_t y) {
+    #####:   48:    if (x == -1) {
+    %%%%%:   48-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   49:        x = x + width_;
+    %%%%%:   49-block  0
+        -:   50:    }
+    #####:   51:    if (y == -1) {
+    %%%%%:   51-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   52:        y = y + height_;
+    %%%%%:   52-block  0
+        -:   53:    }
+    #####:   54:    if (x == width_) {
+    %%%%%:   54-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   55:        x = 0;
+    %%%%%:   55-block  0
+        -:   56:    }
+    #####:   57:    if (y == height_) {
+    %%%%%:   57-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   58:        y = 0;
+    %%%%%:   58-block  0
+        -:   59:    }
+    #####:   60:}
+        -:   61:
+function _ZN4Life23getAliveNeighboursCountEmm called 1 returned 100% blocks executed 21%
+        1:   62:size_t Life::getAliveNeighboursCount(size_t x, size_t y) {
+        1:   63:    if (!isValidCell(x, y)) {
+        1:   63-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    #####:   64:        throw LifeException("kto-to lozhanulsya: x = " +
+    %%%%%:   64-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   64-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    $$$$$:   64-block  2
+call    6 never executed
+    $$$$$:   64-block  3
+    #####:   65:                            std::to_string(x) + " y = " + std::to_string(y));
+    %%%%%:   65-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   65-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   65-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   65-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   65-block  4
+call   13 never executed
+call   14 never executed
+call   15 never executed
+call   16 never executed
+call   17 never executed
+call   18 never executed
+    $$$$$:   65-block  5
+call   19 never executed
+    $$$$$:   65-block  6
+    $$$$$:   65-block  7
+call   20 never executed
+    $$$$$:   65-block  8
+    $$$$$:   65-block  9
+call   21 never executed
+    $$$$$:   65-block 10
+    $$$$$:   65-block 11
+call   22 never executed
+    $$$$$:   65-block 12
+    $$$$$:   65-block 13
+call   23 never executed
+        -:   66:    } else {
+        1:   67:        size_t count = 0;
+        4:   68:        for (int i = -1; i < 2; i++) {
+        1:   68-block  0
+        3:   68-block  1
+        4:   68-block  2
+branch  0 taken 3
+branch  1 taken 1 (fallthrough)
+        3:   69:            if (x + i < -1 || x + i > width_) {
+        3:   69-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 2
+        1:   69-block  1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0
+        3:   70:                continue;
+        3:   70-block  0
+        -:   71:            }
+    #####:   72:            for (int j = -1; j < 2; j++) {
+    %%%%%:   72-block  0
+    %%%%%:   72-block  1
+    %%%%%:   72-block  2
+branch  0 never executed
+branch  1 never executed
+    #####:   73:                if (y + j < -1 || y + j > height_) {
+    %%%%%:   73-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   73-block  1
+branch  2 never executed
+branch  3 never executed
+    #####:   74:                    continue;
+    %%%%%:   74-block  0
+        -:   75:                }
+    #####:   76:                if (i == 0 && j == 0) {
+    %%%%%:   76-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   76-block  1
+branch  2 never executed
+branch  3 never executed
+    #####:   77:                    continue;
+    %%%%%:   77-block  0
+        -:   78:                }
+    #####:   79:                size_t xx = x + i;
+    #####:   80:                size_t yy = y + j;
+    #####:   81:                rightCoordinates(xx, yy);
+    %%%%%:   81-block  0
+call    0 never executed
+    #####:   82:                if (getCellState(xx, yy)) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   83:                    count+=1;
+    %%%%%:   83-block  0
+        -:   84:                }
+        -:   85:            }
+        -:   86:        }
+        1:   87:        return count;
+        1:   87-block  0
+        1:   87-block  1
+        -:   88:    }
+        -:   89:}
+        -:   90:
+function _ZNK4Life11isValidCellEmm called 4 returned 100% blocks executed 83%
+        4:   91:bool Life::isValidCell(size_t x, size_t y) const {
+       4*:   92:    return x >= 0 && y >= 0 && x < width_ && y < height_;
+        4:   92-block  0
+branch  0 taken 4 (fallthrough)
+branch  1 taken 0
+        4:   92-block  1
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0
+        4:   92-block  2
+    %%%%%:   92-block  3
+        4:   92-block  4
+        -:   93:}

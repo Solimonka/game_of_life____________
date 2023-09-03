@@ -25,9 +25,21 @@ public:
 
     bool getCellState(size_t x, size_t y);
 
+    void rightCoordinates(size_t &x, size_t &y);
+
+    size_t getAliveNeighboursCount(size_t x, size_t y);
+
+    void updateCellStates();
+
+    friend std::ostream &operator<<(std::ostream &os, const Life &life);
+
+    std::string string();
+
+    void fillRandomStates();
+
 private:
     void setCellState(size_t x, size_t y, bool state);
-
+    bool isValidCell(size_t x, size_t y) const;
     size_t width_;
     size_t height_;
     std::vector<bool> cell_states_;

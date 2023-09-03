@@ -1,0 +1,1589 @@
+        -:    0:Source:/home/sonik/CLionProjects/game_of_life/Life_tests.cpp
+        -:    0:Graph:/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/CMakeFiles/example_tests.dir/Life_tests.cpp.gcno
+        -:    0:Data:/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/CMakeFiles/example_tests.dir/Life_tests.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <gtest/gtest.h>
+        -:    2:#include "Life.h"
+        -:    3:
+    #####:    4:TEST(Life, DefaultConstructor) {
+    #####:    5:    ASSERT_NO_THROW(Life(3, 3));
+    #####:    6:    ASSERT_THROW(Life(2, 3), LifeException);
+    #####:    7:    ASSERT_THROW(Life(3, 2), LifeException);
+    #####:    8:    ASSERT_THROW(Life(2, 2), LifeException);
+        -:    9:}
+------------------
+_ZN28Life_DefaultConstructor_TestC2Ev:
+function _ZN28Life_DefaultConstructor_TestC2Ev called 0 returned 0% blocks executed 0%
+    #####:    4:TEST(Life, DefaultConstructor) {
+    %%%%%:    4-block  0
+call    0 never executed
+------------------
+_ZN28Life_DefaultConstructor_TestD0Ev:
+function _ZN28Life_DefaultConstructor_TestD0Ev called 0 returned 0% blocks executed 0%
+    #####:    4:TEST(Life, DefaultConstructor) {
+    %%%%%:    4-block  0
+call    0 never executed
+call    1 never executed
+------------------
+_ZN28Life_DefaultConstructor_TestD2Ev:
+function _ZN28Life_DefaultConstructor_TestD2Ev called 0 returned 0% blocks executed 0%
+    #####:    4:TEST(Life, DefaultConstructor) {
+    %%%%%:    4-block  0
+call    0 never executed
+------------------
+_ZN28Life_DefaultConstructor_Test8TestBodyEv:
+function _ZN28Life_DefaultConstructor_Test8TestBodyEv called 0 returned 0% blocks executed 0%
+    #####:    4:TEST(Life, DefaultConstructor) {
+    #####:    5:    ASSERT_NO_THROW(Life(3, 3));
+    %%%%%:    5-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:    5-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:    5-block  2
+branch  7 never executed
+branch  8 never executed
+    %%%%%:    5-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:    5-block  4
+call   12 never executed
+    %%%%%:    5-block  5
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:    5-block  6
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:    5-block  7
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    %%%%%:    5-block  8
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    %%%%%:    5-block  9
+call   26 never executed
+call   27 never executed
+call   28 never executed
+    %%%%%:    5-block 10
+    %%%%%:    5-block 11
+call   29 never executed
+branch 30 never executed
+branch 31 never executed
+    $$$$$:    5-block 12
+branch 32 never executed
+branch 33 never executed
+    $$$$$:    5-block 13
+call   34 never executed
+call   35 never executed
+branch 36 never executed
+branch 37 never executed
+    $$$$$:    5-block 14
+call   38 never executed
+branch 39 never executed
+branch 40 never executed
+    $$$$$:    5-block 15
+call   41 never executed
+branch 42 never executed
+branch 43 never executed
+    $$$$$:    5-block 16
+call   44 never executed
+call   45 never executed
+branch 46 never executed
+branch 47 never executed
+    $$$$$:    5-block 17
+call   48 never executed
+call   49 never executed
+branch 50 never executed
+branch 51 never executed
+    $$$$$:    5-block 18
+call   52 never executed
+branch 53 never executed
+branch 54 never executed
+    $$$$$:    5-block 19
+call   55 never executed
+    $$$$$:    5-block 20
+call   56 never executed
+call   57 never executed
+branch 58 never executed
+branch 59 never executed
+    $$$$$:    5-block 21
+call   60 never executed
+branch 61 never executed
+branch 62 never executed
+    $$$$$:    5-block 22
+call   63 never executed
+    $$$$$:    5-block 23
+    $$$$$:    5-block 24
+call   64 never executed
+    $$$$$:    5-block 25
+call   65 never executed
+    $$$$$:    5-block 26
+call   66 never executed
+    $$$$$:    5-block 27
+    $$$$$:    5-block 28
+call   67 never executed
+    $$$$$:    5-block 29
+    $$$$$:    5-block 30
+call   68 never executed
+    $$$$$:    5-block 31
+    $$$$$:    5-block 32
+call   69 never executed
+    #####:    6:    ASSERT_THROW(Life(2, 3), LifeException);
+    %%%%%:    6-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:    6-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:    6-block  2
+branch  7 never executed
+branch  8 never executed
+    %%%%%:    6-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:    6-block  4
+call   12 never executed
+    %%%%%:    6-block  5
+branch 13 never executed
+branch 14 never executed
+    %%%%%:    6-block  6
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:    6-block  7
+    %%%%%:    6-block  8
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:    6-block  9
+call   21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+    %%%%%:    6-block 10
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+    %%%%%:    6-block 11
+call   28 never executed
+call   29 never executed
+    %%%%%:    6-block 12
+    %%%%%:    6-block 13
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:    6-block 14
+branch 33 never executed
+branch 34 never executed
+branch 35 never executed
+    $$$$$:    6-block 15
+call   36 never executed
+call   37 never executed
+branch 38 never executed
+branch 39 never executed
+    $$$$$:    6-block 16
+call   40 never executed
+call   41 never executed
+branch 42 never executed
+branch 43 never executed
+    $$$$$:    6-block 17
+call   44 never executed
+branch 45 never executed
+branch 46 never executed
+    $$$$$:    6-block 18
+call   47 never executed
+branch 48 never executed
+branch 49 never executed
+    $$$$$:    6-block 19
+call   50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+    $$$$$:    6-block 20
+call   54 never executed
+call   55 never executed
+branch 56 never executed
+branch 57 never executed
+    $$$$$:    6-block 21
+call   58 never executed
+branch 59 never executed
+branch 60 never executed
+    $$$$$:    6-block 22
+call   61 never executed
+    $$$$$:    6-block 23
+call   62 never executed
+call   63 never executed
+branch 64 never executed
+branch 65 never executed
+    $$$$$:    6-block 24
+call   66 never executed
+branch 67 never executed
+branch 68 never executed
+    $$$$$:    6-block 25
+call   69 never executed
+    $$$$$:    6-block 26
+    $$$$$:    6-block 27
+call   70 never executed
+    $$$$$:    6-block 28
+call   71 never executed
+    $$$$$:    6-block 29
+call   72 never executed
+    $$$$$:    6-block 30
+    $$$$$:    6-block 31
+call   73 never executed
+    $$$$$:    6-block 32
+    $$$$$:    6-block 33
+call   74 never executed
+    #####:    7:    ASSERT_THROW(Life(3, 2), LifeException);
+    %%%%%:    7-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:    7-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:    7-block  2
+branch  7 never executed
+branch  8 never executed
+    %%%%%:    7-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:    7-block  4
+call   12 never executed
+    %%%%%:    7-block  5
+branch 13 never executed
+branch 14 never executed
+    %%%%%:    7-block  6
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:    7-block  7
+    %%%%%:    7-block  8
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:    7-block  9
+call   21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+    %%%%%:    7-block 10
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+    %%%%%:    7-block 11
+call   28 never executed
+call   29 never executed
+    %%%%%:    7-block 12
+    %%%%%:    7-block 13
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:    7-block 14
+branch 33 never executed
+branch 34 never executed
+branch 35 never executed
+    $$$$$:    7-block 15
+call   36 never executed
+call   37 never executed
+branch 38 never executed
+branch 39 never executed
+    $$$$$:    7-block 16
+call   40 never executed
+call   41 never executed
+branch 42 never executed
+branch 43 never executed
+    $$$$$:    7-block 17
+call   44 never executed
+branch 45 never executed
+branch 46 never executed
+    $$$$$:    7-block 18
+call   47 never executed
+branch 48 never executed
+branch 49 never executed
+    $$$$$:    7-block 19
+call   50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+    $$$$$:    7-block 20
+call   54 never executed
+call   55 never executed
+branch 56 never executed
+branch 57 never executed
+    $$$$$:    7-block 21
+call   58 never executed
+branch 59 never executed
+branch 60 never executed
+    $$$$$:    7-block 22
+call   61 never executed
+    $$$$$:    7-block 23
+call   62 never executed
+call   63 never executed
+branch 64 never executed
+branch 65 never executed
+    $$$$$:    7-block 24
+call   66 never executed
+branch 67 never executed
+branch 68 never executed
+    $$$$$:    7-block 25
+call   69 never executed
+    $$$$$:    7-block 26
+    $$$$$:    7-block 27
+call   70 never executed
+    $$$$$:    7-block 28
+call   71 never executed
+    $$$$$:    7-block 29
+call   72 never executed
+    $$$$$:    7-block 30
+    $$$$$:    7-block 31
+call   73 never executed
+    $$$$$:    7-block 32
+    $$$$$:    7-block 33
+call   74 never executed
+    #####:    8:    ASSERT_THROW(Life(2, 2), LifeException);
+    %%%%%:    8-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:    8-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:    8-block  2
+branch  7 never executed
+branch  8 never executed
+    %%%%%:    8-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:    8-block  4
+call   12 never executed
+    %%%%%:    8-block  5
+branch 13 never executed
+branch 14 never executed
+    %%%%%:    8-block  6
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:    8-block  7
+    %%%%%:    8-block  8
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:    8-block  9
+call   21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+    %%%%%:    8-block 10
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+    %%%%%:    8-block 11
+call   28 never executed
+call   29 never executed
+    %%%%%:    8-block 12
+    %%%%%:    8-block 13
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:    8-block 14
+branch 33 never executed
+branch 34 never executed
+branch 35 never executed
+    $$$$$:    8-block 15
+call   36 never executed
+call   37 never executed
+branch 38 never executed
+branch 39 never executed
+    $$$$$:    8-block 16
+call   40 never executed
+call   41 never executed
+branch 42 never executed
+branch 43 never executed
+    $$$$$:    8-block 17
+call   44 never executed
+branch 45 never executed
+branch 46 never executed
+    $$$$$:    8-block 18
+call   47 never executed
+branch 48 never executed
+branch 49 never executed
+    $$$$$:    8-block 19
+call   50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+    $$$$$:    8-block 20
+call   54 never executed
+call   55 never executed
+branch 56 never executed
+branch 57 never executed
+    $$$$$:    8-block 21
+call   58 never executed
+branch 59 never executed
+branch 60 never executed
+    $$$$$:    8-block 22
+call   61 never executed
+    $$$$$:    8-block 23
+call   62 never executed
+call   63 never executed
+branch 64 never executed
+branch 65 never executed
+    $$$$$:    8-block 24
+call   66 never executed
+branch 67 never executed
+branch 68 never executed
+    $$$$$:    8-block 25
+call   69 never executed
+    $$$$$:    8-block 26
+    $$$$$:    8-block 27
+call   70 never executed
+    $$$$$:    8-block 28
+call   71 never executed
+    $$$$$:    8-block 29
+call   72 never executed
+    $$$$$:    8-block 30
+    $$$$$:    8-block 31
+call   73 never executed
+    $$$$$:    8-block 32
+    $$$$$:    8-block 33
+call   74 never executed
+        -:    9:}
+------------------
+        -:   10:
+    #####:   11:TEST(Life, Getters) {
+    #####:   12:    Life game(3, 4);
+    #####:   13:    ASSERT_EQ(game.getHeight(), 4);
+    #####:   14:    ASSERT_EQ(game.getWidth(), 3);
+    #####:   15:    ASSERT_EQ(game.getCellStates().size(), 12);
+    #####:   16:    for (int i = 0; i < 12; ++i) {
+    #####:   17:        ASSERT_FALSE(game.getCellStates()[i]);
+        -:   18:    }
+        -:   19://    for(auto cellState: game.getCellStates()){
+        -:   20://        ASSERT_FALSE(cellState);
+        -:   21://    }
+    #####:   22:}
+------------------
+_ZN17Life_Getters_TestC2Ev:
+function _ZN17Life_Getters_TestC2Ev called 0 returned 0% blocks executed 0%
+    #####:   11:TEST(Life, Getters) {
+    %%%%%:   11-block  0
+call    0 never executed
+------------------
+_ZN17Life_Getters_TestD0Ev:
+function _ZN17Life_Getters_TestD0Ev called 0 returned 0% blocks executed 0%
+    #####:   11:TEST(Life, Getters) {
+    %%%%%:   11-block  0
+call    0 never executed
+call    1 never executed
+------------------
+_ZN17Life_Getters_TestD2Ev:
+function _ZN17Life_Getters_TestD2Ev called 0 returned 0% blocks executed 0%
+    #####:   11:TEST(Life, Getters) {
+    %%%%%:   11-block  0
+call    0 never executed
+------------------
+_ZN17Life_Getters_Test8TestBodyEv:
+function _ZN17Life_Getters_Test8TestBodyEv called 0 returned 0% blocks executed 0%
+    #####:   11:TEST(Life, Getters) {
+    #####:   12:    Life game(3, 4);
+    %%%%%:   12-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   13:    ASSERT_EQ(game.getHeight(), 4);
+    %%%%%:   13-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   13-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   13-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   13-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   13-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   13-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   13-block  6
+call   19 never executed
+call   20 never executed
+    %%%%%:   13-block  7
+    %%%%%:   13-block  8
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   13-block  9
+    $$$$$:   13-block 10
+    $$$$$:   13-block 11
+call   24 never executed
+    $$$$$:   13-block 12
+    $$$$$:   13-block 13
+call   25 never executed
+    $$$$$:   13-block 14
+    $$$$$:   13-block 15
+call   26 never executed
+    #####:   14:    ASSERT_EQ(game.getWidth(), 3);
+    %%%%%:   14-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   14-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   14-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   14-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   14-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   14-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   14-block  6
+call   19 never executed
+call   20 never executed
+    %%%%%:   14-block  7
+    %%%%%:   14-block  8
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   14-block  9
+    $$$$$:   14-block 10
+    $$$$$:   14-block 11
+call   24 never executed
+    $$$$$:   14-block 12
+    $$$$$:   14-block 13
+call   25 never executed
+    $$$$$:   14-block 14
+    $$$$$:   14-block 15
+call   26 never executed
+    #####:   15:    ASSERT_EQ(game.getCellStates().size(), 12);
+    %%%%%:   15-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   15-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   15-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   15-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   15-block  4
+call   13 never executed
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   15-block  5
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   15-block  6
+call   20 never executed
+call   21 never executed
+    %%%%%:   15-block  7
+    %%%%%:   15-block  8
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+    $$$$$:   15-block  9
+    $$$$$:   15-block 10
+    $$$$$:   15-block 11
+call   25 never executed
+    $$$$$:   15-block 12
+    $$$$$:   15-block 13
+call   26 never executed
+    $$$$$:   15-block 14
+    $$$$$:   15-block 15
+call   27 never executed
+    #####:   16:    for (int i = 0; i < 12; ++i) {
+    %%%%%:   16-block  0
+    %%%%%:   16-block  1
+    %%%%%:   16-block  2
+branch  0 never executed
+branch  1 never executed
+    #####:   17:        ASSERT_FALSE(game.getCellStates()[i]);
+    %%%%%:   17-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   17-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   17-block  2
+call    6 never executed
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   17-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   17-block  4
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   17-block  5
+call   16 never executed
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   17-block  6
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    %%%%%:   17-block  7
+call   23 never executed
+call   24 never executed
+call   25 never executed
+    %%%%%:   17-block  8
+    %%%%%:   17-block  9
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   17-block 10
+call   29 never executed
+    $$$$$:   17-block 11
+    $$$$$:   17-block 12
+call   30 never executed
+    $$$$$:   17-block 13
+    $$$$$:   17-block 14
+call   31 never executed
+    $$$$$:   17-block 15
+    $$$$$:   17-block 16
+call   32 never executed
+        -:   18:    }
+        -:   19://    for(auto cellState: game.getCellStates()){
+        -:   20://        ASSERT_FALSE(cellState);
+        -:   21://    }
+    #####:   22:}
+    %%%%%:   22-block  0
+    %%%%%:   22-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:   22-block  2
+call    3 never executed
+------------------
+        -:   23:
+    #####:   24:TEST(Life, Setters) {
+    #####:   25:    Life game(3, 4);
+    #####:   26:    game.setCellAlive(0, 0);
+    #####:   27:    game.setCellDeda(1, 2);
+    #####:   28:    ASSERT_TRUE(game.getCellStates()[0]);
+    #####:   29:    ASSERT_FALSE(game.getCellStates()[7]);
+    #####:   30:    ASSERT_THROW(game.setCellAlive(4, 0), LifeException);
+    #####:   31:}
+------------------
+_ZN17Life_Setters_TestC2Ev:
+function _ZN17Life_Setters_TestC2Ev called 0 returned 0% blocks executed 0%
+    #####:   24:TEST(Life, Setters) {
+    %%%%%:   24-block  0
+call    0 never executed
+------------------
+_ZN17Life_Setters_TestD0Ev:
+function _ZN17Life_Setters_TestD0Ev called 0 returned 0% blocks executed 0%
+    #####:   24:TEST(Life, Setters) {
+    %%%%%:   24-block  0
+call    0 never executed
+call    1 never executed
+------------------
+_ZN17Life_Setters_TestD2Ev:
+function _ZN17Life_Setters_TestD2Ev called 0 returned 0% blocks executed 0%
+    #####:   24:TEST(Life, Setters) {
+    %%%%%:   24-block  0
+call    0 never executed
+------------------
+_ZN17Life_Setters_Test8TestBodyEv:
+function _ZN17Life_Setters_Test8TestBodyEv called 0 returned 0% blocks executed 0%
+    #####:   24:TEST(Life, Setters) {
+    #####:   25:    Life game(3, 4);
+    %%%%%:   25-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   26:    game.setCellAlive(0, 0);
+    %%%%%:   26-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   27:    game.setCellDeda(1, 2);
+    %%%%%:   27-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   28:    ASSERT_TRUE(game.getCellStates()[0]);
+    %%%%%:   28-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   28-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   28-block  2
+call    6 never executed
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   28-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   28-block  4
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   28-block  5
+call   16 never executed
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   28-block  6
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    %%%%%:   28-block  7
+call   23 never executed
+call   24 never executed
+call   25 never executed
+    %%%%%:   28-block  8
+    %%%%%:   28-block  9
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   28-block 10
+call   29 never executed
+    $$$$$:   28-block 11
+    $$$$$:   28-block 12
+call   30 never executed
+    $$$$$:   28-block 13
+    $$$$$:   28-block 14
+call   31 never executed
+    $$$$$:   28-block 15
+    $$$$$:   28-block 16
+call   32 never executed
+    #####:   29:    ASSERT_FALSE(game.getCellStates()[7]);
+    %%%%%:   29-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   29-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   29-block  2
+call    6 never executed
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   29-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   29-block  4
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   29-block  5
+call   16 never executed
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   29-block  6
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    %%%%%:   29-block  7
+call   23 never executed
+call   24 never executed
+call   25 never executed
+    %%%%%:   29-block  8
+    %%%%%:   29-block  9
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   29-block 10
+call   29 never executed
+    $$$$$:   29-block 11
+    $$$$$:   29-block 12
+call   30 never executed
+    $$$$$:   29-block 13
+    $$$$$:   29-block 14
+call   31 never executed
+    $$$$$:   29-block 15
+    $$$$$:   29-block 16
+call   32 never executed
+    #####:   30:    ASSERT_THROW(game.setCellAlive(4, 0), LifeException);
+    %%%%%:   30-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   30-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   30-block  2
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   30-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   30-block  4
+branch 12 never executed
+branch 13 never executed
+    %%%%%:   30-block  5
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   30-block  6
+    %%%%%:   30-block  7
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   30-block  8
+call   20 never executed
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    %%%%%:   30-block  9
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    %%%%%:   30-block 10
+call   27 never executed
+call   28 never executed
+    %%%%%:   30-block 11
+    %%%%%:   30-block 12
+call   29 never executed
+branch 30 never executed
+branch 31 never executed
+    $$$$$:   30-block 13
+branch 32 never executed
+branch 33 never executed
+branch 34 never executed
+    $$$$$:   30-block 14
+call   35 never executed
+call   36 never executed
+branch 37 never executed
+branch 38 never executed
+    $$$$$:   30-block 15
+call   39 never executed
+call   40 never executed
+branch 41 never executed
+branch 42 never executed
+    $$$$$:   30-block 16
+call   43 never executed
+branch 44 never executed
+branch 45 never executed
+    $$$$$:   30-block 17
+call   46 never executed
+branch 47 never executed
+branch 48 never executed
+    $$$$$:   30-block 18
+call   49 never executed
+call   50 never executed
+branch 51 never executed
+branch 52 never executed
+    $$$$$:   30-block 19
+call   53 never executed
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+    $$$$$:   30-block 20
+call   57 never executed
+branch 58 never executed
+branch 59 never executed
+    $$$$$:   30-block 21
+call   60 never executed
+    $$$$$:   30-block 22
+call   61 never executed
+call   62 never executed
+branch 63 never executed
+branch 64 never executed
+    $$$$$:   30-block 23
+call   65 never executed
+branch 66 never executed
+branch 67 never executed
+    $$$$$:   30-block 24
+call   68 never executed
+    $$$$$:   30-block 25
+    $$$$$:   30-block 26
+call   69 never executed
+    $$$$$:   30-block 27
+call   70 never executed
+    $$$$$:   30-block 28
+call   71 never executed
+    $$$$$:   30-block 29
+    $$$$$:   30-block 30
+call   72 never executed
+    $$$$$:   30-block 31
+    $$$$$:   30-block 32
+call   73 never executed
+    #####:   31:}
+    %%%%%:   31-block  0
+    %%%%%:   31-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:   31-block  2
+call    3 never executed
+------------------
+        -:   32:
+    #####:   33:TEST(Life, GetCellState) {
+    #####:   34:    Life game(3, 4);
+    #####:   35:    game.setCellAlive(0, 0);
+    #####:   36:    game.setCellDeda(1, 2);
+    #####:   37:    ASSERT_TRUE(game.getCellState(0, 0));
+    #####:   38:    ASSERT_FALSE(game.getCellState(1, 2));
+    #####:   39:    ASSERT_THROW(game.getCellState(4, 0), LifeException);
+    #####:   40:}
+------------------
+_ZN22Life_GetCellState_TestC2Ev:
+function _ZN22Life_GetCellState_TestC2Ev called 0 returned 0% blocks executed 0%
+    #####:   33:TEST(Life, GetCellState) {
+    %%%%%:   33-block  0
+call    0 never executed
+------------------
+_ZN22Life_GetCellState_TestD0Ev:
+function _ZN22Life_GetCellState_TestD0Ev called 0 returned 0% blocks executed 0%
+    #####:   33:TEST(Life, GetCellState) {
+    %%%%%:   33-block  0
+call    0 never executed
+call    1 never executed
+------------------
+_ZN22Life_GetCellState_TestD2Ev:
+function _ZN22Life_GetCellState_TestD2Ev called 0 returned 0% blocks executed 0%
+    #####:   33:TEST(Life, GetCellState) {
+    %%%%%:   33-block  0
+call    0 never executed
+------------------
+_ZN22Life_GetCellState_Test8TestBodyEv:
+function _ZN22Life_GetCellState_Test8TestBodyEv called 0 returned 0% blocks executed 0%
+    #####:   33:TEST(Life, GetCellState) {
+    #####:   34:    Life game(3, 4);
+    %%%%%:   34-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   35:    game.setCellAlive(0, 0);
+    %%%%%:   35-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   36:    game.setCellDeda(1, 2);
+    %%%%%:   36-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   37:    ASSERT_TRUE(game.getCellState(0, 0));
+    %%%%%:   37-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   37-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   37-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   37-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   37-block  4
+call   13 never executed
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   37-block  5
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   37-block  6
+call   20 never executed
+call   21 never executed
+call   22 never executed
+    %%%%%:   37-block  7
+    %%%%%:   37-block  8
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   37-block  9
+call   26 never executed
+    $$$$$:   37-block 10
+    $$$$$:   37-block 11
+call   27 never executed
+    $$$$$:   37-block 12
+    $$$$$:   37-block 13
+call   28 never executed
+    $$$$$:   37-block 14
+    $$$$$:   37-block 15
+call   29 never executed
+    #####:   38:    ASSERT_FALSE(game.getCellState(1, 2));
+    %%%%%:   38-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   38-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   38-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   38-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   38-block  4
+call   13 never executed
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   38-block  5
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   38-block  6
+call   20 never executed
+call   21 never executed
+call   22 never executed
+    %%%%%:   38-block  7
+    %%%%%:   38-block  8
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   38-block  9
+call   26 never executed
+    $$$$$:   38-block 10
+    $$$$$:   38-block 11
+call   27 never executed
+    $$$$$:   38-block 12
+    $$$$$:   38-block 13
+call   28 never executed
+    $$$$$:   38-block 14
+    $$$$$:   38-block 15
+call   29 never executed
+    #####:   39:    ASSERT_THROW(game.getCellState(4, 0), LifeException);
+    %%%%%:   39-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   39-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   39-block  2
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   39-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   39-block  4
+branch 12 never executed
+branch 13 never executed
+    %%%%%:   39-block  5
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   39-block  6
+    %%%%%:   39-block  7
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   39-block  8
+call   20 never executed
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    %%%%%:   39-block  9
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    %%%%%:   39-block 10
+call   27 never executed
+call   28 never executed
+    %%%%%:   39-block 11
+    %%%%%:   39-block 12
+call   29 never executed
+branch 30 never executed
+branch 31 never executed
+    $$$$$:   39-block 13
+branch 32 never executed
+branch 33 never executed
+branch 34 never executed
+    $$$$$:   39-block 14
+call   35 never executed
+call   36 never executed
+branch 37 never executed
+branch 38 never executed
+    $$$$$:   39-block 15
+call   39 never executed
+call   40 never executed
+branch 41 never executed
+branch 42 never executed
+    $$$$$:   39-block 16
+call   43 never executed
+branch 44 never executed
+branch 45 never executed
+    $$$$$:   39-block 17
+call   46 never executed
+branch 47 never executed
+branch 48 never executed
+    $$$$$:   39-block 18
+call   49 never executed
+call   50 never executed
+branch 51 never executed
+branch 52 never executed
+    $$$$$:   39-block 19
+call   53 never executed
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+    $$$$$:   39-block 20
+call   57 never executed
+branch 58 never executed
+branch 59 never executed
+    $$$$$:   39-block 21
+call   60 never executed
+    $$$$$:   39-block 22
+call   61 never executed
+call   62 never executed
+branch 63 never executed
+branch 64 never executed
+    $$$$$:   39-block 23
+call   65 never executed
+branch 66 never executed
+branch 67 never executed
+    $$$$$:   39-block 24
+call   68 never executed
+    $$$$$:   39-block 25
+    $$$$$:   39-block 26
+call   69 never executed
+    $$$$$:   39-block 27
+call   70 never executed
+    $$$$$:   39-block 28
+call   71 never executed
+    $$$$$:   39-block 29
+    $$$$$:   39-block 30
+call   72 never executed
+    $$$$$:   39-block 31
+    $$$$$:   39-block 32
+call   73 never executed
+    #####:   40:}
+    %%%%%:   40-block  0
+    %%%%%:   40-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:   40-block  2
+call    3 never executed
+------------------
+        -:   41:
+        4:   42:TEST(Life, CountNeighbours) {
+        1:   43:    Life game(3, 4);
+        1:   44:    game.setCellAlive(0, 0);
+        1:   45:    game.setCellAlive(1, 2);
+        1:   46:    game.setCellAlive(2, 3);
+       1*:   47:    ASSERT_EQ(game.getAliveNeighboursCount(0, 0), 1);   /// + - -
+    #####:   48:    ASSERT_EQ(game.getAliveNeighboursCount(2, 3), 3);   /// - - -
+    #####:   49:    ASSERT_EQ(game.getAliveNeighboursCount(2, 2), 1);   /// - + -
+    #####:   50:    ASSERT_EQ(game.getAliveNeighboursCount(1, 1), 3);   /// - - +
+    #####:   51:    ASSERT_THROW(game.getAliveNeighboursCount(3, 3), LifeException);
+       1*:   52:}
+------------------
+_ZN25Life_CountNeighbours_TestC2Ev:
+function _ZN25Life_CountNeighbours_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   42:TEST(Life, CountNeighbours) {
+        1:   42-block  0
+call    0 returned 1
+------------------
+_ZN25Life_CountNeighbours_TestD0Ev:
+function _ZN25Life_CountNeighbours_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   42:TEST(Life, CountNeighbours) {
+        1:   42-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN25Life_CountNeighbours_TestD2Ev:
+function _ZN25Life_CountNeighbours_TestD2Ev called 1 returned 100% blocks executed 100%
+        1:   42:TEST(Life, CountNeighbours) {
+        1:   42-block  0
+call    0 returned 1
+------------------
+_ZN25Life_CountNeighbours_Test8TestBodyEv:
+function _ZN25Life_CountNeighbours_Test8TestBodyEv called 1 returned 100% blocks executed 13%
+        1:   42:TEST(Life, CountNeighbours) {
+        1:   43:    Life game(3, 4);
+        1:   43-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   44:    game.setCellAlive(0, 0);
+        1:   44-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   45:    game.setCellAlive(1, 2);
+        1:   45-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   46:    game.setCellAlive(2, 3);
+        1:   46-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   47:    ASSERT_EQ(game.getAliveNeighboursCount(0, 0), 1);   /// + - -
+        1:   47-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   47-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   47-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0
+        1:   47-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   47-block  4
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   47-block  5
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   47-block  6
+call   19 returned 1
+call   20 returned 1
+    %%%%%:   47-block  7
+        1:   47-block  8
+call   21 returned 1
+branch 22 taken 0 (fallthrough)
+branch 23 taken 1
+    $$$$$:   47-block  9
+    $$$$$:   47-block 10
+    $$$$$:   47-block 11
+call   24 never executed
+    $$$$$:   47-block 12
+    $$$$$:   47-block 13
+call   25 never executed
+    $$$$$:   47-block 14
+    $$$$$:   47-block 15
+call   26 never executed
+    #####:   48:    ASSERT_EQ(game.getAliveNeighboursCount(2, 3), 3);   /// - - -
+    %%%%%:   48-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   48-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   48-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   48-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   48-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   48-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   48-block  6
+call   19 never executed
+call   20 never executed
+    %%%%%:   48-block  7
+    %%%%%:   48-block  8
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   48-block  9
+    $$$$$:   48-block 10
+    $$$$$:   48-block 11
+call   24 never executed
+    $$$$$:   48-block 12
+    $$$$$:   48-block 13
+call   25 never executed
+    $$$$$:   48-block 14
+    $$$$$:   48-block 15
+call   26 never executed
+    #####:   49:    ASSERT_EQ(game.getAliveNeighboursCount(2, 2), 1);   /// - + -
+    %%%%%:   49-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   49-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   49-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   49-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   49-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   49-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   49-block  6
+call   19 never executed
+call   20 never executed
+    %%%%%:   49-block  7
+    %%%%%:   49-block  8
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   49-block  9
+    $$$$$:   49-block 10
+    $$$$$:   49-block 11
+call   24 never executed
+    $$$$$:   49-block 12
+    $$$$$:   49-block 13
+call   25 never executed
+    $$$$$:   49-block 14
+    $$$$$:   49-block 15
+call   26 never executed
+    #####:   50:    ASSERT_EQ(game.getAliveNeighboursCount(1, 1), 3);   /// - - +
+    %%%%%:   50-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   50-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   50-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   50-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   50-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   50-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   50-block  6
+call   19 never executed
+call   20 never executed
+    %%%%%:   50-block  7
+    %%%%%:   50-block  8
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   50-block  9
+    $$$$$:   50-block 10
+    $$$$$:   50-block 11
+call   24 never executed
+    $$$$$:   50-block 12
+    $$$$$:   50-block 13
+call   25 never executed
+    $$$$$:   50-block 14
+    $$$$$:   50-block 15
+call   26 never executed
+    #####:   51:    ASSERT_THROW(game.getAliveNeighboursCount(3, 3), LifeException);
+    %%%%%:   51-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   51-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   51-block  2
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   51-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   51-block  4
+branch 12 never executed
+branch 13 never executed
+    %%%%%:   51-block  5
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   51-block  6
+    %%%%%:   51-block  7
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   51-block  8
+call   20 never executed
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    %%%%%:   51-block  9
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    %%%%%:   51-block 10
+call   27 never executed
+call   28 never executed
+    %%%%%:   51-block 11
+    %%%%%:   51-block 12
+call   29 never executed
+branch 30 never executed
+branch 31 never executed
+    $$$$$:   51-block 13
+branch 32 never executed
+branch 33 never executed
+branch 34 never executed
+    $$$$$:   51-block 14
+call   35 never executed
+call   36 never executed
+branch 37 never executed
+branch 38 never executed
+    $$$$$:   51-block 15
+call   39 never executed
+call   40 never executed
+branch 41 never executed
+branch 42 never executed
+    $$$$$:   51-block 16
+call   43 never executed
+branch 44 never executed
+branch 45 never executed
+    $$$$$:   51-block 17
+call   46 never executed
+branch 47 never executed
+branch 48 never executed
+    $$$$$:   51-block 18
+call   49 never executed
+call   50 never executed
+branch 51 never executed
+branch 52 never executed
+    $$$$$:   51-block 19
+call   53 never executed
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+    $$$$$:   51-block 20
+call   57 never executed
+branch 58 never executed
+branch 59 never executed
+    $$$$$:   51-block 21
+call   60 never executed
+    $$$$$:   51-block 22
+call   61 never executed
+call   62 never executed
+branch 63 never executed
+branch 64 never executed
+    $$$$$:   51-block 23
+call   65 never executed
+branch 66 never executed
+branch 67 never executed
+    $$$$$:   51-block 24
+call   68 never executed
+    $$$$$:   51-block 25
+    $$$$$:   51-block 26
+call   69 never executed
+    $$$$$:   51-block 27
+call   70 never executed
+    $$$$$:   51-block 28
+call   71 never executed
+    $$$$$:   51-block 29
+    $$$$$:   51-block 30
+call   72 never executed
+    $$$$$:   51-block 31
+    $$$$$:   51-block 32
+call   73 never executed
+       1*:   52:}
+    %%%%%:   52-block  0
+        1:   52-block  1
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    $$$$$:   52-block  2
+call    3 never executed
+------------------
+        -:   53:

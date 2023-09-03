@@ -39,3 +39,41 @@ TEST(Life, GetCellState) {
     ASSERT_THROW(game.getCellState(4, 0), LifeException);
 }
 
+TEST(Life, CountNeighbours) {
+    Life game(3, 4);
+    game.setCellAlive(0, 0);
+    game.setCellAlive(1, 2);
+    game.setCellAlive(2, 2);
+    ASSERT_EQ(game.getAliveNeighboursCount(0, 0), 0);   /// + - -
+    ASSERT_EQ(game.getAliveNeighboursCount(2, 3), 3);   /// - - -
+    ASSERT_EQ(game.getAliveNeighboursCount(2, 2), 1);   /// - + +
+    ASSERT_EQ(game.getAliveNeighboursCount(1, 1), 3);   /// - - -
+    ASSERT_THROW(game.getAliveNeighboursCount(3, 3), LifeException);
+}
+
+TEST(Life, OperatorOstream) {
+    Life game(3, 4);
+    game.setCellAlive(0, 0);
+    game.setCellAlive(1, 2);
+    game.setCellAlive(2, 2);
+//    std::cout << game;
+//    std::stringstream ss;
+//    ss << game;
+    std::cout << game.string() << std::endl;
+}
+
+TEST(Life, Play) {
+    Life game(10, 10);
+//    game.fillRandomStates();
+    game.setCellAlive(0, 1);
+    game.setCellAlive(1, 1);
+    game.setCellAlive(2, 1);
+    game.setCellAlive(2, 0);
+    game.setCellAlive(1, 9);
+    while(true){
+        system("sleep 1.5");
+        std::cout<<game.string()<<std::endl;
+        game.updateCellStates();
+        system("clear");
+    }
+}

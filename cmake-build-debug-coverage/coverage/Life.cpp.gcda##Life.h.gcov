@@ -1,0 +1,45 @@
+        -:    0:Source:/home/sonik/CLionProjects/game_of_life/Life.h
+        -:    0:Graph:/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/CMakeFiles/example_tests.dir/Life.cpp.gcno
+        -:    0:Data:/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/CMakeFiles/example_tests.dir/Life.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#pragma once
+        -:    2:
+        -:    3:#include <iostream>
+        -:    4:#include <vector>
+        -:    5:
+        -:    6:class LifeException : public std::runtime_error {
+        -:    7:public:
+function _ZN13LifeExceptionC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:    8:    explicit LifeException(const std::string &message) : std::runtime_error(message) {}
+    %%%%%:    8-block  0
+call    0 never executed
+        -:    9:};
+        -:   10:
+        -:   11:class Life {
+        -:   12:public:
+        -:   13:
+        -:   14:    explicit Life(size_t width, size_t height);
+        -:   15:
+        -:   16:    size_t getWidth() const;
+        -:   17:
+        -:   18:    size_t getHeight() const;
+        -:   19:
+        -:   20:    const std::vector<bool> &getCellStates() const;
+        -:   21:
+        -:   22:    void setCellDeda(size_t x, size_t y);
+        -:   23:
+        -:   24:    void setCellAlive(size_t x, size_t y);
+        -:   25:
+        -:   26:    bool getCellState(size_t x, size_t y);
+        -:   27:
+        -:   28:    void rightCoordinates(size_t x, size_t y);
+        -:   29:
+        -:   30:    size_t getAliveNeighboursCount(size_t x, size_t y);
+        -:   31:
+        -:   32:private:
+        -:   33:    void setCellState(size_t x, size_t y, bool state);
+        -:   34:    bool isValidCell(size_t x, size_t y) const;
+        -:   35:    size_t width_;
+        -:   36:    size_t height_;
+        -:   37:    std::vector<bool> cell_states_;
+        -:   38:};

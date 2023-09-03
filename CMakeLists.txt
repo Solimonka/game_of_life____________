@@ -13,7 +13,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(TEST_NAME ${PROJECT_NAME}_tests)
 add_executable(${TEST_NAME} Life_tests.cpp
         Life.cpp
-        Life.h)
+        Life.h
+)
 target_link_libraries(${TEST_NAME} gtest_main)
 
 enable_testing()
