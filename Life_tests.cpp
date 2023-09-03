@@ -30,3 +30,12 @@ TEST(Life, Setters) {
     ASSERT_THROW(game.setCellAlive(4, 0), LifeException);
 }
 
+TEST(Life, GetCellState) {
+    Life game(3, 4);
+    game.setCellAlive(0, 0);
+    game.setCellDeda(1, 2);
+    ASSERT_TRUE(game.getCellState(0, 0));
+    ASSERT_FALSE(game.getCellState(1, 2));
+    ASSERT_THROW(game.getCellState(4, 0), LifeException);
+}
+

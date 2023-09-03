@@ -34,3 +34,11 @@ void Life::setCellDeda(size_t x, size_t y) {
 void Life::setCellAlive(size_t x, size_t y) {
     setCellState(x, y, true);
 }
+
+bool Life::getCellState(size_t x, size_t y) {
+    if (x >= width_ || y >= height_) {
+        throw LifeException("kto-to lozhanulsya: x = " +
+                            std::to_string(x) + " y = " + std::to_string(y));
+    }
+    return cell_states_[y * width_ + x];
+}

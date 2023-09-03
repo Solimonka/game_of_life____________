@@ -23,6 +23,8 @@ public:
 
     void setCellAlive(size_t x, size_t y);
 
+    bool getCellState(size_t x, size_t y);
+
 private:
     void setCellState(size_t x, size_t y, bool state);
 
