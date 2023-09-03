@@ -1,0 +1,57 @@
+Start testing: Sep 03 14:39 MSK
+----------------------------------------------------------
+1/2 Testing: GoogleTestCi.Foo
+1/2 Test: GoogleTestCi.Foo
+Command: "/home/sonik/CLionProjects/game_of_life/mybuild/example_tests" "--gtest_filter=GoogleTestCi.Foo" "--gtest_also_run_disabled_tests"
+Directory: /home/sonik/CLionProjects/game_of_life/mybuild
+"GoogleTestCi.Foo" start time: Sep 03 14:39 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/sonik/CLionProjects/game_of_life/mybuild/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GoogleTestCi.Foo
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GoogleTestCi
+[ RUN      ] GoogleTestCi.Foo
+[       OK ] GoogleTestCi.Foo (0 ms)
+[----------] 1 test from GoogleTestCi (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"GoogleTestCi.Foo" end time: Sep 03 14:39 MSK
+"GoogleTestCi.Foo" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: ExampleTest.DmitriiLeonidovich
+2/2 Test: ExampleTest.DmitriiLeonidovich
+Command: "/home/sonik/CLionProjects/game_of_life/mybuild/example_tests" "--gtest_filter=ExampleTest.DmitriiLeonidovich" "--gtest_also_run_disabled_tests"
+Directory: /home/sonik/CLionProjects/game_of_life/mybuild
+"ExampleTest.DmitriiLeonidovich" start time: Sep 03 14:39 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/sonik/CLionProjects/game_of_life/mybuild/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ExampleTest.DmitriiLeonidovich
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExampleTest
+[ RUN      ] ExampleTest.DmitriiLeonidovich
+[       OK ] ExampleTest.DmitriiLeonidovich (0 ms)
+[----------] 1 test from ExampleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ExampleTest.DmitriiLeonidovich" end time: Sep 03 14:39 MSK
+"ExampleTest.DmitriiLeonidovich" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 03 14:39 MSK
