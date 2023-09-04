@@ -1,0 +1,7 @@
+Life.DefaultConstructor 2 0.00989833
+Life.Getters 2 0.0105199
+Life.Setters 2 0.0100952
+Life.GetCellState 2 0.0115231
+Life.CountNeighbours 2 0.00819632
+Life.OperatorOstream 2 0.00764373
+---

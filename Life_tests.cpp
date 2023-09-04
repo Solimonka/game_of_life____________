@@ -62,18 +62,18 @@ TEST(Life, OperatorOstream) {
     std::cout << game.string() << std::endl;
 }
 
-TEST(Life, Play) {
-    Life game(10, 10);
-//    game.fillRandomStates();
-    game.setCellAlive(0, 1);
-    game.setCellAlive(1, 1);
-    game.setCellAlive(2, 1);
-    game.setCellAlive(2, 0);
-    game.setCellAlive(1, 9);
-    while(true){
-        system("sleep 1.5");
-        std::cout<<game.string()<<std::endl;
-        game.updateCellStates();
-        system("clear");
-    }
-}
+//TEST(Life, Play) {
+//    Life game(10, 10);
+////    game.fillRandomStates();
+//    game.setCellAlive(0, 1);
+//    game.setCellAlive(1, 1);
+//    game.setCellAlive(2, 1);
+//    game.setCellAlive(2, 0);
+//    game.setCellAlive(1, 9);
+//    while(true){
+//        system("sleep 1.5");
+//        std::cout<<game.string()<<std::endl;
+//        game.updateCellStates();
+//        system("clear");
+//    }
+//}

@@ -87,25 +87,34 @@ bool Life::isValidCell(size_t x, size_t y) const {
     return x >= 0 && y >= 0 && x < width_ && y < height_;
 }
 
+//Любая живая клетка с двумя или тремя живыми соседями выживает.
+//Любая мертвая ячейка с тремя живыми соседями становится живой ячейкой.
+//Все остальные живые клетки умирают в следующем поколении. Точно так же все остальные мертвые клетки остаются мертвыми.
+
 void Life::updateCellStates() {
     Life other_life(width_, height_);
     std::vector<bool> new_cell_states = cell_states_;
     for (int x = 0; x < width_; ++x) {
         for (int y = 0; y < height_; ++y) {
-            if (!getCellState(x, y)) {
-                if (getAliveNeighboursCount(x, y) == 3) {
-                    other_life.setCellAlive(x, y);
-                } else {
-                    continue;
-                }
-            } else {
-                if (getAliveNeighboursCount(x, y) == 2 ||
-                    getAliveNeighboursCount(x, y) == 3) {////////////////////////////////optimise
+            if (getAliveNeighboursCount(x, y) == 3 || getCellState(x, y) && getAliveNeighboursCount(x, y) == 2) {
                     other_life.setCellAlive(x, y);
                 } else {
                     other_life.setCellDeda(x, y);
                 }
-            }
+//            if (!getCellState(x, y)) {
+//                if (getAliveNeighboursCount(x, y) == 3) {
+//                    other_life.setCellAlive(x, y);
+//                } else {
+//                    continue;
+//                }
+//            } else {
+//                if (getAliveNeighboursCount(x, y) == 2 ||
+//                    getAliveNeighboursCount(x, y) == 3) {////////////////////////////////optimise
+//                    other_life.setCellAlive(x, y);
+//                } else {
+//                    other_life.setCellDeda(x, y);
+//                }
+//            }
         }
     }
     std::swap(*this, other_life);
