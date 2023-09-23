@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "Life.h"
+#include "../life_backend/include/Life.h"
 
 TEST(Life, DefaultConstructor) {
     ASSERT_NO_THROW(Life(3, 3));
@@ -63,15 +63,15 @@ TEST(Life, OperatorOstream) {
 }
 
 //TEST(Life, Play) {
-//    Life game(10, 10);
+//    Life game(30, 20);
 ////    game.fillRandomStates();
 //    game.setCellAlive(0, 1);
-//    game.setCellAlive(1, 1);
-//    game.setCellAlive(2, 1);
+//    game.setCellAlive(1, 2);
 //    game.setCellAlive(2, 0);
-//    game.setCellAlive(1, 9);
+//    game.setCellAlive(2, 1);
+//    game.setCellAlive(2, 2);
 //    while(true){
-//        system("sleep 1.5");
+//        system("sleep 0.5");
 //        std::cout<<game.string()<<std::endl;
 //        game.updateCellStates();
 //        system("clear");

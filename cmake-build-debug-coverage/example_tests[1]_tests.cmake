@@ -10,4 +10,6 @@ add_test([=[Life.CountNeighbours]=]  /home/sonik/CLionProjects/game_of_life/cmak
 set_tests_properties([=[Life.CountNeighbours]=]  PROPERTIES WORKING_DIRECTORY /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
 add_test([=[Life.OperatorOstream]=]  /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/example_tests [==[--gtest_filter=Life.OperatorOstream]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[Life.OperatorOstream]=]  PROPERTIES WORKING_DIRECTORY /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  example_tests_TESTS Life.DefaultConstructor Life.Getters Life.Setters Life.GetCellState Life.CountNeighbours Life.OperatorOstream)
+add_test([=[Life.Play]=]  /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/example_tests [==[--gtest_filter=Life.Play]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[Life.Play]=]  PROPERTIES WORKING_DIRECTORY /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  example_tests_TESTS Life.DefaultConstructor Life.Getters Life.Setters Life.GetCellState Life.CountNeighbours Life.OperatorOstream Life.Play)

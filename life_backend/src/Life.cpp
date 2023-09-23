@@ -1,5 +1,5 @@
 #include <random>
-#include "Life.h"
+#include "../include/Life.h"
 
 Life::Life(size_t width, size_t height) : width_(width), height_(height) {
     if (width_ < 3 || height_ < 3) {

@@ -49,19 +49,19 @@ cmake_ninja_workdir = /home/sonik/CLionProjects/game_of_life/cmake-build-debug-c
 
 build cmake_object_order_depends_target_example_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
-build CMakeFiles/example_tests.dir/Life_tests.cpp.o: CXX_COMPILER__example_tests_unscanned_Debug /home/sonik/CLionProjects/game_of_life/Life_tests.cpp || cmake_object_order_depends_target_example_tests
-  DEP_FILE = CMakeFiles/example_tests.dir/Life_tests.cpp.o.d
+build CMakeFiles/example_tests.dir/life_tests/Life_tests.cpp.o: CXX_COMPILER__example_tests_unscanned_Debug /home/sonik/CLionProjects/game_of_life/life_tests/Life_tests.cpp || cmake_object_order_depends_target_example_tests
+  DEP_FILE = CMakeFiles/example_tests.dir/life_tests/Life_tests.cpp.o.d
   FLAGS = --coverage -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest/include -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/example_tests.dir
-  OBJECT_FILE_DIR = CMakeFiles/example_tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/example_tests.dir/life_tests
 
-build CMakeFiles/example_tests.dir/Life.cpp.o: CXX_COMPILER__example_tests_unscanned_Debug /home/sonik/CLionProjects/game_of_life/Life.cpp || cmake_object_order_depends_target_example_tests
-  DEP_FILE = CMakeFiles/example_tests.dir/Life.cpp.o.d
+build CMakeFiles/example_tests.dir/life_backend/src/Life.cpp.o: CXX_COMPILER__example_tests_unscanned_Debug /home/sonik/CLionProjects/game_of_life/life_backend/src/Life.cpp || cmake_object_order_depends_target_example_tests
+  DEP_FILE = CMakeFiles/example_tests.dir/life_backend/src/Life.cpp.o.d
   FLAGS = --coverage -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest/include -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/example_tests.dir
-  OBJECT_FILE_DIR = CMakeFiles/example_tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/example_tests.dir/life_backend/src
 
 
 # =============================================================================
@@ -71,7 +71,7 @@ build CMakeFiles/example_tests.dir/Life.cpp.o: CXX_COMPILER__example_tests_unsca
 #############################################
 # Link the executable example_tests
 
-build example_tests example_tests[1]_tests.cmake | ${cmake_ninja_workdir}example_tests[1]_tests.cmake: CXX_EXECUTABLE_LINKER__example_tests_Debug CMakeFiles/example_tests.dir/Life_tests.cpp.o CMakeFiles/example_tests.dir/Life.cpp.o | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+build example_tests example_tests[1]_tests.cmake | ${cmake_ninja_workdir}example_tests[1]_tests.cmake: CXX_EXECUTABLE_LINKER__example_tests_Debug CMakeFiles/example_tests.dir/life_tests/Life_tests.cpp.o CMakeFiles/example_tests.dir/life_backend/src/Life.cpp.o | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
   FLAGS = --coverage -g
   LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a
   OBJECT_DIR = CMakeFiles/example_tests.dir

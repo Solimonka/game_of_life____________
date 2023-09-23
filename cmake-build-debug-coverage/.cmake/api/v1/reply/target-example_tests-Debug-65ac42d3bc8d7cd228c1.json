@@ -151,18 +151,18 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Life_tests.cpp",
+			"path" : "life_tests/Life_tests.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Life.cpp",
+			"path" : "life_backend/src/Life.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Life.h",
+			"path" : "life_backend/include/Life.h",
 			"sourceGroupIndex" : 1
 		}
 	],
