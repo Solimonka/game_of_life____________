@@ -6,3 +6,4 @@
 # testing this directory and lists subdirectories to be tested as well.
 include("/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/example_tests[1]_include.cmake")
 subdirs("_deps/googletest-build")
+subdirs("life_backend")

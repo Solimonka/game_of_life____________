@@ -31,3 +31,11 @@
 /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-build/googletest/CMakeFiles/install.dir
 /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-build/googletest/CMakeFiles/install/local.dir
 /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-build/googletest/CMakeFiles/install/strip.dir
+/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/life_backend/CMakeFiles/game_of_life_library.dir
+/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/life_backend/CMakeFiles/test.dir
+/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/life_backend/CMakeFiles/edit_cache.dir
+/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/life_backend/CMakeFiles/rebuild_cache.dir
+/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/life_backend/CMakeFiles/list_install_components.dir
+/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/life_backend/CMakeFiles/install.dir
+/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/life_backend/CMakeFiles/install/local.dir
+/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/life_backend/CMakeFiles/install/strip.dir

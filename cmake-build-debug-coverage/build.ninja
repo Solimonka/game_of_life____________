@@ -51,17 +51,31 @@ build cmake_object_order_depends_target_example_tests: phony || cmake_object_ord
 
 build CMakeFiles/example_tests.dir/life_tests/Life_tests.cpp.o: CXX_COMPILER__example_tests_unscanned_Debug /home/sonik/CLionProjects/game_of_life/life_tests/Life_tests.cpp || cmake_object_order_depends_target_example_tests
   DEP_FILE = CMakeFiles/example_tests.dir/life_tests/Life_tests.cpp.o.d
-  FLAGS = --coverage -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = --coverage -fprofile-arcs -ftest-coverage -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest/include -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/example_tests.dir
   OBJECT_FILE_DIR = CMakeFiles/example_tests.dir/life_tests
 
 build CMakeFiles/example_tests.dir/life_backend/src/Life.cpp.o: CXX_COMPILER__example_tests_unscanned_Debug /home/sonik/CLionProjects/game_of_life/life_backend/src/Life.cpp || cmake_object_order_depends_target_example_tests
   DEP_FILE = CMakeFiles/example_tests.dir/life_backend/src/Life.cpp.o.d
-  FLAGS = --coverage -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = --coverage -fprofile-arcs -ftest-coverage -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest/include -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/example_tests.dir
   OBJECT_FILE_DIR = CMakeFiles/example_tests.dir/life_backend/src
+
+build CMakeFiles/example_tests.dir/life_tests/library_tests.cpp.o: CXX_COMPILER__example_tests_unscanned_Debug /home/sonik/CLionProjects/game_of_life/life_tests/library_tests.cpp || cmake_object_order_depends_target_example_tests
+  DEP_FILE = CMakeFiles/example_tests.dir/life_tests/library_tests.cpp.o.d
+  FLAGS = --coverage -fprofile-arcs -ftest-coverage -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest/include -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest
+  OBJECT_DIR = CMakeFiles/example_tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/example_tests.dir/life_tests
+
+build CMakeFiles/example_tests.dir/life_frontend/life_frontend.cpp.o: CXX_COMPILER__example_tests_unscanned_Debug /home/sonik/CLionProjects/game_of_life/life_frontend/life_frontend.cpp || cmake_object_order_depends_target_example_tests
+  DEP_FILE = CMakeFiles/example_tests.dir/life_frontend/life_frontend.cpp.o.d
+  FLAGS = --coverage -fprofile-arcs -ftest-coverage -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest/include -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest
+  OBJECT_DIR = CMakeFiles/example_tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/example_tests.dir/life_frontend
 
 
 # =============================================================================
@@ -71,8 +85,8 @@ build CMakeFiles/example_tests.dir/life_backend/src/Life.cpp.o: CXX_COMPILER__ex
 #############################################
 # Link the executable example_tests
 
-build example_tests example_tests[1]_tests.cmake | ${cmake_ninja_workdir}example_tests[1]_tests.cmake: CXX_EXECUTABLE_LINKER__example_tests_Debug CMakeFiles/example_tests.dir/life_tests/Life_tests.cpp.o CMakeFiles/example_tests.dir/life_backend/src/Life.cpp.o | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = --coverage -g
+build example_tests example_tests[1]_tests.cmake | ${cmake_ninja_workdir}example_tests[1]_tests.cmake: CXX_EXECUTABLE_LINKER__example_tests_Debug CMakeFiles/example_tests.dir/life_tests/Life_tests.cpp.o CMakeFiles/example_tests.dir/life_backend/src/Life.cpp.o CMakeFiles/example_tests.dir/life_tests/library_tests.cpp.o CMakeFiles/example_tests.dir/life_frontend/life_frontend.cpp.o | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = --coverage -fprofile-arcs -ftest-coverage -g
   LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a
   OBJECT_DIR = CMakeFiles/example_tests.dir
   POST_BUILD = cd /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage && /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/bin/cmake -D TEST_TARGET=example_tests -D TEST_EXECUTABLE=/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/example_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=example_tests_TESTS -D CTEST_FILE=/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/example_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/GoogleTestAddTests.cmake
@@ -256,7 +270,7 @@ build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depen
 
 build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CXX_COMPILER__gmock_unscanned_Debug /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
   DEP_FILE = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d
-  FLAGS = --coverage -g -fdiagnostics-color=always -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  FLAGS = --coverage -fprofile-arcs -ftest-coverage -g -fdiagnostics-color=always -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
   INCLUDES = -I/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googlemock/include -I/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googlemock -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest/include -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest
   OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
   OBJECT_FILE_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src
@@ -270,7 +284,7 @@ build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o:
 # Link the static library lib/libgmock.a
 
 build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o || lib/libgtest.a
-  LANGUAGE_COMPILE_FLAGS = --coverage -g
+  LANGUAGE_COMPILE_FLAGS = --coverage -fprofile-arcs -ftest-coverage -g
   OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -288,7 +302,7 @@ build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_
 
 build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: CXX_COMPILER__gmock_main_unscanned_Debug /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
   DEP_FILE = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d
-  FLAGS = --coverage -g -fdiagnostics-color=always -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  FLAGS = --coverage -fprofile-arcs -ftest-coverage -g -fdiagnostics-color=always -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
   INCLUDES = -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googlemock/include -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googlemock -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest/include -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest
   OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
   OBJECT_FILE_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src
@@ -302,7 +316,7 @@ build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main
 # Link the static library lib/libgmock_main.a
 
 build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o || lib/libgmock.a lib/libgtest.a
-  LANGUAGE_COMPILE_FLAGS = --coverage -g
+  LANGUAGE_COMPILE_FLAGS = --coverage -fprofile-arcs -ftest-coverage -g
   OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -402,7 +416,7 @@ build cmake_object_order_depends_target_gtest: phony || _deps/googletest-build/g
 
 build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILER__gtest_unscanned_Debug /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
   DEP_FILE = _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d
-  FLAGS = --coverage -g -fdiagnostics-color=always -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  FLAGS = --coverage -fprofile-arcs -ftest-coverage -g -fdiagnostics-color=always -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
   INCLUDES = -I/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest/include -I/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest
   OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir
   OBJECT_FILE_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src
@@ -416,7 +430,7 @@ build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o:
 # Link the static library lib/libgtest.a
 
 build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
-  LANGUAGE_COMPILE_FLAGS = --coverage -g
+  LANGUAGE_COMPILE_FLAGS = --coverage -fprofile-arcs -ftest-coverage -g
   OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -434,7 +448,7 @@ build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_
 
 build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_COMPILER__gtest_main_unscanned_Debug /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
   DEP_FILE = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d
-  FLAGS = --coverage -g -fdiagnostics-color=always -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  FLAGS = --coverage -fprofile-arcs -ftest-coverage -g -fdiagnostics-color=always -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
   INCLUDES = -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest/include -isystem /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/_deps/googletest-src/googletest
   OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
   OBJECT_FILE_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src
@@ -448,7 +462,7 @@ build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main
 # Link the static library lib/libgtest_main.a
 
 build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o || lib/libgtest.a
-  LANGUAGE_COMPILE_FLAGS = --coverage -g
+  LANGUAGE_COMPILE_FLAGS = --coverage -fprofile-arcs -ftest-coverage -g
   OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -533,7 +547,123 @@ build _deps/googletest-build/googletest/CMakeFiles/install/strip.util: CUSTOM_CO
 build _deps/googletest-build/googletest/install/strip: phony _deps/googletest-build/googletest/CMakeFiles/install/strip.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/sonik/CLionProjects/game_of_life/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target game_of_life_library
+
+
+#############################################
+# Order-only phony target for game_of_life_library
+
+build cmake_object_order_depends_target_game_of_life_library: phony || life_backend/CMakeFiles/game_of_life_library.dir
+
+build life_backend/CMakeFiles/game_of_life_library.dir/src/Life.cpp.o: CXX_COMPILER__game_of_life_library_unscanned_Debug /home/sonik/CLionProjects/game_of_life/life_backend/src/Life.cpp || cmake_object_order_depends_target_game_of_life_library
+  DEP_FILE = life_backend/CMakeFiles/game_of_life_library.dir/src/Life.cpp.o.d
+  FLAGS = --coverage -fprofile-arcs -ftest-coverage -Wno-delete-incomplete -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I/home/sonik/CLionProjects/game_of_life/life_backend/include
+  OBJECT_DIR = life_backend/CMakeFiles/game_of_life_library.dir
+  OBJECT_FILE_DIR = life_backend/CMakeFiles/game_of_life_library.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target game_of_life_library
+
+
+#############################################
+# Link the static library life_backend/libgame_of_life_library.a
+
+build life_backend/libgame_of_life_library.a: CXX_STATIC_LIBRARY_LINKER__game_of_life_library_Debug life_backend/CMakeFiles/game_of_life_library.dir/src/Life.cpp.o
+  LANGUAGE_COMPILE_FLAGS = --coverage -fprofile-arcs -ftest-coverage -Wno-delete-incomplete -g
+  OBJECT_DIR = life_backend/CMakeFiles/game_of_life_library.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = life_backend/libgame_of_life_library.a
+  TARGET_PDB = game_of_life_library.a.dbg
+
+
+#############################################
+# Utility command for test
+
+build life_backend/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/life_backend && /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build life_backend/test: phony life_backend/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build life_backend/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/life_backend && /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build life_backend/edit_cache: phony life_backend/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build life_backend/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/life_backend && /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/sonik/CLionProjects/game_of_life -B/home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build life_backend/rebuild_cache: phony life_backend/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build life_backend/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build life_backend/CMakeFiles/install.util: CUSTOM_COMMAND life_backend/all
+  COMMAND = cd /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/life_backend && /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build life_backend/install: phony life_backend/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build life_backend/CMakeFiles/install/local.util: CUSTOM_COMMAND life_backend/all
+  COMMAND = cd /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/life_backend && /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build life_backend/install/local: phony life_backend/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build life_backend/CMakeFiles/install/strip.util: CUSTOM_COMMAND life_backend/all
+  COMMAND = cd /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/life_backend && /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build life_backend/install/strip: phony life_backend/CMakeFiles/install/strip.util
+
+# =============================================================================
 # Target aliases.
+
+build game_of_life_library: phony life_backend/libgame_of_life_library.a
 
 build gmock: phony lib/libgmock.a
 
@@ -542,6 +672,8 @@ build gmock_main: phony lib/libgmock_main.a
 build gtest: phony lib/libgtest.a
 
 build gtest_main: phony lib/libgtest_main.a
+
+build libgame_of_life_library.a: phony life_backend/libgame_of_life_library.a
 
 build libgmock.a: phony lib/libgmock.a
 
@@ -559,7 +691,7 @@ build libgtest_main.a: phony lib/libgtest_main.a
 #############################################
 # Folder: /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage
 
-build all: phony example_tests _deps/googletest-build/all
+build all: phony example_tests _deps/googletest-build/all life_backend/all
 
 # =============================================================================
 
@@ -583,20 +715,27 @@ build _deps/googletest-build/googlemock/all: phony lib/libgmock.a lib/libgmock_m
 build _deps/googletest-build/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 
 # =============================================================================
+
+#############################################
+# Folder: /home/sonik/CLionProjects/game_of_life/cmake-build-debug-coverage/life_backend
+
+build life_backend/all: phony life_backend/libgame_of_life_library.a
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/sonik/CLionProjects/game_of_life/CMakeLists.txt /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FetchContent.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FetchContent/CMakeLists.cmake.in /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindGit.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPython.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPython/Support.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindThreads.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/GoogleTest.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake
+build build.ninja: RERUN_CMAKE | /home/sonik/CLionProjects/game_of_life/CMakeLists.txt /home/sonik/CLionProjects/game_of_life/life_backend/CMakeLists.txt /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FetchContent.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FetchContent/CMakeLists.cmake.in /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindGit.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPython.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPython/Support.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindThreads.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/GoogleTest.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/sonik/CLionProjects/game_of_life/CMakeLists.txt /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FetchContent.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FetchContent/CMakeLists.cmake.in /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindGit.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPython.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPython/Support.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindThreads.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/GoogleTest.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake: phony
+build /home/sonik/CLionProjects/game_of_life/CMakeLists.txt /home/sonik/CLionProjects/game_of_life/life_backend/CMakeLists.txt /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FetchContent.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FetchContent/CMakeLists.cmake.in /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindGit.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPython.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPython/Support.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindThreads.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/GoogleTest.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /home/sonik/Downloads/CLion-2023.2.1/clion-2023.2.1/bin/cmake/linux/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake: phony
 
 
 #############################################

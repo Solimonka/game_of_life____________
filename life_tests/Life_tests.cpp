@@ -1,5 +1,8 @@
 #include <gtest/gtest.h>
 #include "../life_backend/include/Life.h"
+using life_backend::Life;
+using life_backend::LifeException;
+
 
 TEST(Life, DefaultConstructor) {
     ASSERT_NO_THROW(Life(3, 3));
